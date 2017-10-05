@@ -1,7 +1,13 @@
-.field {
-  overflow: hidden;
+.playground {
+  border: 1px solid aqua;
   margin: auto;
   width: 50%;
+}
+
+.field {
+  overflow: hidden;
+  display: table;
+  margin: 0 auto;
 }
 
 .field div{
@@ -9,8 +15,23 @@
   height:100px;
   border:1px solid black;
   float:left;
+  background-color: aqua;
 }
 
 .field div:nth-of-type(10n+1){
   clear:left;
+}
+
+.field div.hit {
+  background-color: red;
+}
+
+.field div.miss {
+  background-color: blue;
+}
+
+.score {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
 }

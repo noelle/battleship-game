@@ -1,6 +1,10 @@
-<div class="field">
-  <div *ngFor="let square of squares">
-    <span>{{square.x}}</span> {{square.y}}
+<div class="playground">
+  <div class="score">
+    <p>Anzahl Versuche: {{score}}</p>
+  </div>
+  <div class="field">
+    <div *ngFor="let square of squares" (click)="onClick(square)" [ngClass]="{'hit' : square.hit, 'miss': square.miss}">
+      <span>{{square.x}}</span> {{square.y}}
+    </div>
   </div>
 </div>
-
