@@ -1,0 +1,16 @@
+.field {
+  overflow: hidden;
+  margin: auto;
+  width: 50%;
+}
+
+.field div{
+  width:100px;
+  height:100px;
+  border:1px solid black;
+  float:left;
+}
+
+.field div:nth-of-type(10n+1){
+  clear:left;
+}
